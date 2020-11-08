@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Roboto;
+  src: url(/src/style/fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Lato;
+  src: url(/src/style/fonts/Lato/Lato-Regular.ttf);
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html, body {
+  font-family: Lato, sans-serif;
+}
+
+h1, h2, h3, h4, h5, button {
+  font-family: Roboto, sans-serif;
+}
+
+textarea, input {
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  height: 21px;
+  resize: vertical;
+}
+
+input {
+  margin: 0 auto;
+}
+
+.b-del-ground {
+  margin-left: 0.5em;
+}
+
+.b-add-ground {
+  margin: 1.5em;
+}
+
+.b-no-border {
+  border: none;
+  background: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+table {
+  background-color: #f5bdbd;
+  margin: 0 auto;
+  border-spacing: 0px;
+  border-collapse: collapse;
+}
+
+.t-g-form {
+  background-color: #b7b7b7;
+  max-width: 55vw;
+  margin: 1rem auto;
+  border: 1px solid black;
+}
+
+.t-g-form td{
+  max-width: 150px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.t-g-form td:last-child{
+  max-width: 150px;
+  border: none;
+}
+
+.t-g-form input{
+  max-width: 100px;
+  margin: 0 2.5px;
+}
+
+.t-g-form textarea{
+  max-width: 158px;
+  margin: 0 2.5px;
+}
+
+.t-g-header td:first-child {
+  max-width: 40px;
+}
+
+.t-g-header td:nth-child(2){
+  width: 180px;
+}
+
+.t-g-main td:first-child input{
+  max-width: 30px;
+}
+
+.t-g-row {
+}
+
+.t-g-header div:nth-child(n)  {
+}
+
+.t-g-header h3{
+  font-size: 1rem;
+}
+
+.t-g-body {
+}
+
+.t-g-controls {
+}
+
+.ground-charact div:nth-child(1) input{
+}
