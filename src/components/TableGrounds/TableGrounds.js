@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react";
 import TGHead from "./components/TGHead";
 import TGBody from "./components/TGBody";
-import {IconContext} from "react-icons";
-import {FaPlus, FaSync} from 'react-icons/fa';
+
 import { v4 as uuidv4 } from 'uuid';
+import '../../style/TableGround.css';
 
 const TableGrounds = () => {
 
@@ -42,41 +42,20 @@ const TableGrounds = () => {
 	useEffect(()=> console.log(groundDB));
 
 	return (
-		<form onSubmit={(e)=>{e.preventDefault()}} className='t-g-form'>
+		<section className='t-g-main'>
+			<form onSubmit={(e)=>{e.preventDefault()}} className='t-g-form'>
 				<h2>Характеристики грунтов</h2>
 
 			<table className='t-g-main'>
-				<TGHead />
+				<TGHead addRowInDB={()=>addRowInDB()}/>
 				<TGBody
 					groundDB={groundDB}
 					updateGroundInDB = {(ground) => updateGroundInDB(ground)}
 					deleteGroundFromDB={(idDeleteGround) => deleteGroundFromDB(idDeleteGround)}/>
 			</table>
 
-			<div className='t-g-controls'>
-				<button
-					className='b-add-ground b-no-border'
-					onClick={()=>addRowInDB()}>
-
-					<IconContext.Provider
-						value={{ color: `green`, className: "global-class-name", size: "2em" }}>
-						<FaPlus />
-					</IconContext.Provider>
-
-				</button>
-
-				<button
-					className='b-add-ground b-no-border'
-					onClick={()=>console.log(groundDB) }>
-
-					<IconContext.Provider value={{ color: `yellow`, className: "global-class-name", size: "2em" }}>
-						<FaSync />
-					</IconContext.Provider>
-
-				</button>
-			</div>
-
 		</form>
+		</section>
 	);
 };
 

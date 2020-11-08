@@ -1,7 +1,8 @@
 import React from "react";
-//import sortInputGrounds from "../../../lib/sortInputGrounds";
+import {IconContext} from "react-icons";
+import {FaPlus} from 'react-icons/fa';
 
-export default function TGHead () {
+export default function TGHead ({addRowInDB}) {
 	return (
 		<thead className='t-g-header t-g-row'>
 			<tr>
@@ -12,7 +13,19 @@ export default function TGHead () {
 				<td><h3>Угол внутреннего трения (fiII), град</h3> </td>
 				<td><h3>Модуль деформаций (Е), МПа</h3> </td>
 				<td><h3>Мощность слоя, м</h3> </td>
-				<td> </td>
+				<td tabIndex="-1" className='t-g-controls'>
+					<button
+						className='b-add-ground b-no-border'
+
+						onClick={()=>addRowInDB()}>
+
+						<IconContext.Provider
+							value={{ color: `green`, className: "global-class-name", size: "2em" }}>
+							<FaPlus />
+						</IconContext.Provider>
+
+					</button>
+				</td>
 			</tr>
 		</thead>
 	);

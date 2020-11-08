@@ -1,17 +1,19 @@
-import React, {useState} from "react";
+import React from "react";
 import BuildingBenchmark from "./components/BuildingBenchmark";
 import BuildingView from "./components/BuildingView";
+import '../../style/BuildingOptions.css'
 
 //const {buildingBenchmark, setBuildingBenchmark} = useState({});
 //const {buildingGeometry, setBuildingGeometry} = useState({});
 
 
-export default function BuildingMerger () {
+const BuildingMerger = () => {
 return (
-  <div>
+  <section className='build-options-main'>
     <BuildingBenchmark />
     <BuildingView />
-  </div>
+  </section>
 );
+};
 
-}
+export default BuildingMerger;

@@ -46,6 +46,7 @@ const TGBodyRow = (props) => {
 								onChange={(e) => handleChange(e) }
 								value={groundDB[item]}
 								>
+
 							</textarea>
 							</td>)
 					} else {
