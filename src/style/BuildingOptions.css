@@ -1,0 +1,15 @@
+.bldng-bench-form {
+    background-color: #c1fdf6;
+    width: 880px;
+    margin: 1rem auto;
+    padding: 10px;
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.68);
+}
+
+.bldng-bench-form section {
+    display: block;
+}
+
+.bldng-bench-form input {
+    margin: 1px 5px;
+}

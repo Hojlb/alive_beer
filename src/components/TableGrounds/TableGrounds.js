@@ -3,7 +3,7 @@ import TGHead from "./components/TGHead";
 import TGBody from "./components/TGBody";
 
 import { v4 as uuidv4 } from 'uuid';
-import '../../style/TableGround.css';
+import "../../style/TableGround.css";
 
 const TableGrounds = () => {
 

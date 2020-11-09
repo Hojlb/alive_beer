@@ -1,0 +1,90 @@
+textarea {
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+.b-del-ground {
+    margin-left: 0.5em;
+}
+
+.b-add-ground {
+    margin: 0.5em;
+}
+
+.b-no-border {
+    border: none;
+    background: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+table {
+    background-color: #e5edf5;
+    margin: 10px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.68);
+}
+
+.t-g-form {
+    background-color: #c1fdf6;
+    width: 880px;
+    margin: 1rem auto;
+    padding: 10px;
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.68);
+}
+
+.t-g-form td{
+    max-width: 110px;
+    border: 1px solid #80827e47;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.t-g-form td:nth-child(2){
+    max-width: 200px;
+}
+
+.t-g-form td:last-child{
+    max-width: 80px;
+    border: none;
+}
+
+.t-g-form input{
+    max-width: 93px;
+}
+
+.t-g-form textarea{
+    max-width: 158px;
+    max-height: 100px;
+}
+
+.t-g-form textarea, .t-g-form input{
+    font-size: 100%;
+    width: 26em; /* fallback for the next one, for browsers not recognizing ch */
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    border: none;
+    border-bottom: 3px solid #55c494;
+    resize:none;
+}
+
+.t-g-header td:first-child {
+    max-width: 40px;
+}
+
+.t-g-header td:nth-child(2){
+    width: 180px;
+}
+
+.t-g-main td:first-child input{
+    max-width: 25px;
+}
+
+.t-g-header h3{
+    font-size: 1rem;
+}
