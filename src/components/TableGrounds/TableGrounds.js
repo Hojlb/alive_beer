@@ -42,7 +42,7 @@ const TableGrounds = () => {
 	useEffect(()=> console.log(groundDB));
 
 	return (
-		<section className='t-g-main'>
+		<section className='t-g-main card'>
 			<form onSubmit={(e)=>{e.preventDefault()}} className='t-g-form'>
 				<h2>Характеристики грунтов</h2>
 

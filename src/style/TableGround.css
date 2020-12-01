@@ -1,10 +1,12 @@
+h2:first-child {
+    text-align: end;
+}
 textarea {
     resize: vertical;
     box-sizing: border-box;
 }
 
 .b-del-ground {
-    margin-left: 0.5em;
 }
 
 .b-add-ground {
@@ -14,6 +16,12 @@ textarea {
 .b-no-border {
     border: none;
     background: none;
+    cursor: pointer;
+}
+
+.b-no-border:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 7px 24px rgba(0, 0, 0, 0.68);
 }
 
 input::-webkit-outer-spin-button,
@@ -39,6 +47,7 @@ table {
 }
 
 .t-g-form td{
+    text-align: center;
     max-width: 110px;
     border: 1px solid #80827e47;
     overflow: hidden;

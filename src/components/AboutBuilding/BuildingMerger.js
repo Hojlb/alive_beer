@@ -9,7 +9,7 @@ import "../../style/BuildingOptions.css";
 
 const BuildingMerger = () => {
 return (
-  <section className='build-options-main'>
+  <section className='build-options-main card'>
     <BuildingBenchmark />
     <BuildingView />
   </section>
